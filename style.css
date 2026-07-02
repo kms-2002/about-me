@@ -1,0 +1,267 @@
+:root {
+  --bg: #0b0f19;
+  --panel: #141a29;
+  --panel-2: #182036;
+  --border: #232b3d;
+  --accent: #64ffda;
+  --text: #e6e9f0;
+  --text-dim: #97a1b5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 60px 20px 40px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Segoe UI", sans-serif;
+  line-height: 1.6;
+  word-break: keep-all; /* 한글이 글자 단위로 쪼개져 세로로 줄바꿈되는 것 방지 */
+}
+
+.page-title {
+  text-align: center;
+  color: var(--accent);
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+}
+
+.card {
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 32px;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.profile-info {
+  min-width: 0; /* flex 아이템이 넘칠 때 줄바꿈이 정상적으로 되도록 */
+}
+
+.name {
+  margin: 0 0 8px 0;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.school {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  font-weight: normal;
+}
+
+.quote {
+  color: var(--accent);
+  font-weight: bold;
+  margin: 6px 0 12px 0;
+}
+
+.bio {
+  color: var(--text-dim);
+  margin: 0;
+}
+
+.section {
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text);
+  letter-spacing: 1px;
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+.bar {
+  width: 4px;
+  height: 16px;
+  background: var(--accent);
+  display: inline-block;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* 프로젝트 카드 */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.project-card h4 {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+}
+
+.project-card p {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  margin: 0 0 14px 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: rgba(100, 255, 218, 0.1);
+  color: var(--accent);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+/* 2단 레이아웃 (자격증/활동, 스킬/연락처 공용) */
+.two-col {
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.two-col .section {
+  margin: 0;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  max-width: none;
+}
+
+/* 자격증 목록 */
+.cert-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cert-list li {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+}
+
+/* 활동/수상 목록 */
+.activity-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.activity-list li {
+  border-left: 2px solid var(--accent);
+  padding-left: 14px;
+}
+
+.activity-title {
+  display: block;
+  font-weight: 600;
+  font-size: 0.92rem;
+  margin-bottom: 2px;
+}
+
+.activity-desc {
+  display: block;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
+/* 스킬 */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-pill {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+/* 연락처 */
+.contact-row {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+  font-size: 0.9rem;
+}
+
+.contact-row:first-of-type {
+  margin-top: 0;
+}
+
+.contact-label {
+  width: 55px;
+  flex-shrink: 0;
+  color: var(--text-dim);
+}
+
+footer {
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  margin-top: 30px;
+}
+
+/* 반응형: 화면이 좁아지면 2단을 1단으로 */
+@media (max-width: 700px) {
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .name {
+    justify-content: center;
+  }
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+}
