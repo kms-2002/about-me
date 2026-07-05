@@ -3,53 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me</title>
+  <title>About Me - 김민성</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <h1 class="page-title">About Me</h1>
 
-  <!-- 프로필 카드 -->
   <section class="card profile-card">
     <img class="profile-photo" src="https://placehold.co/140x140/1a2332/64ffda?text=Photo" alt="프로필 사진" />
     <div class="profile-info">
-      <h2 class="name">김민성 <span class="school">경상국립대학교 경영정보학과 4학년</span></h2>
-      <p class="quote">"2026년 AI Agent Challenge 참여자"</p>
+      <h2 class="name">김민성 <span class="school">경상국립대학교 경영정보학과(MIS) 4학년</span></h2>
+      <p class="quote">"데이터 기반 비즈니스 가치를 창출하는 경영정보학 전공자"</p>
       <p class="bio">
-        LLM 개발과 데이터 분석 분야에 관심이 있고, 코드와 프로세스로 웹 개발 및 분석이
-        이루어지는 과정을 배우고 있습니다. AI Agent Challenge에서는 데이터 분석 위주로
-        공부해왔지만, 전체적인 기초 개발 역량까지 쌓아 AI와 IT에 대한 이해를 넓히고 싶습니다.
+        LLM 개발과 데이터 분석 분야에 관심이 있고, 코드와 프로세스로 웹 개발 및 분석이 이루어지는 과정을 배우고 있습니다.
+        기존의 시스템 설계 지식과 데이터 분석 역량을 바탕으로 실무 프로세스를 분석하고 아키텍처를 구조화하는 역량을 쌓아가고 있습니다.
       </p>
     </div>
   </section>
 
-  <!-- 프로젝트 -->
+  <section class="section">
+    <h3 class="section-title"><span class="bar"></span>🤖 AI Agent Challenge 참여 목적 및 기대 효과</h3>
+    <div class="project-card" style="background-color: #1a2332; border-color: #224c43; line-height: 1.7;">
+      <p style="font-size: 1rem; color: #fff; font-weight: 500; margin-bottom: 15px;">
+        기존의 시스템 설계 지식과 데이터 분석 역량을 바탕으로, LLM 및 생성형 AI 프레임워크를 융합하며 실무 프로세스를 혁신하고자 도전합니다.
+      </p>
+      <ul style="padding-left: 20px; margin: 0; color: #94a3b8; font-size: 0.95rem; display: flex; flex-direction: column; gap: 8px;">
+        <li><strong style="color: #64ffda;">LLM 기반 워크플로우 자동화:</strong> 생성형 AI 에이전트를 실무에 적용해 비즈니스 자동화 아키텍처를 설계하고 프로세스를 최적화하는 역량 확보.</li>
+        <li><strong style="color: #64ffda;">프롬프트 엔지니어링 내재화:</strong> 다양한 요구사항과 시나리오에 즉각적으로 대응할 수 있는 고도화된 프롬프트 설계 기법 자산화.</li>
+        <li><strong style="color: #64ffda;">AI 기반 융합적 문제 해결:</strong> 데이터 수집·시각화를 넘어 AI 에이전트를 결합하며 차세대 비즈니스 인사이트를 능동적으로 도출.</li>
+      </ul>
+    </div>
+  </section>
+
   <section class="section">
     <h3 class="section-title"><span class="bar"></span>PROJECTS</h3>
     <div class="project-grid">
-      <div class="project-card">
-        <h4>경상국립대학교 김민성 자기소개서 연습</h4>
-        <p>AI Agent Challenge에서 제공하는 기초 PR 작성을 마무리하였으며, Node.js와 Git 등을 활용하여 제작하였습니다.</p>
-        <div class="tags">
-          <span class="tag">Node.js</span>
-          <span class="tag">Git</span>
-        </div>
-      </div>
 
       <div class="project-card">
         <h4>국방 규격 LLM 챗봇</h4>
-        <p>창업동아리 '나는야 국방맨'에서 국방 규격 PDF 등 자료를 학습시켜 질의응답이 가능한 LLM 챗봇을 개발하고 있습니다.</p>
+        <p>창업동아리 '나는야 국방맨'에서 국방 규격 PDF 등 비정형 데이터를 파싱 및 학습시켜 군 실무 효율화를 위한 질의응답 가능 LLM 챗봇을 개발하고 있습니다.</p>
         <div class="tags">
           <span class="tag">LLM</span>
           <span class="tag">PDF 파싱</span>
           <span class="tag">챗봇</span>
         </div>
       </div>
+
+      <div class="project-card">
+        <h4>경상남도 빅데이터 분석 공모전</h4>
+        <p>지역 내 공공 및 도메인 데이터를 활용하여 Python(Pandas, NumPy) 기반 전처리와 시각화(Matplotlib, Seaborn)를 수행하고 최적의 비즈니스 아키텍처 모델을 기획했습니다.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">데이터 분석</span>
+          <span class="tag">시각화</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h4>거제시 세대별 관광지 선호도 분석</h4>
+        <p>공공 데이터를 가공하여 Python과 Folium 라이브러리를 활용해 지리정보(GIS) 시각화를 구현하고 세대별 맞춤형 관광 코스 인사이트를 도출했습니다.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Folium</span>
+          <span class="tag">GIS</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h4>호텔 예약 플랫폼 'HOTELLY' 서비스 기획</h4>
+        <p>JavaScript(Date 객체) 기반 동적 캘린더 아키텍처와 성수기 자동 판별 알림 로직을 설계했습니다. 자동 슬라이드 배너 등 인터랙티브 UI/UX 및 예약 프로세스를 전반적으로 구현했습니다.</p>
+        <div class="tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">UI/UX</span>
+          <span class="tag">시스템 설계</span>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- 자격증 & 공모전 -->
   <div class="two-col">
 
     <section class="section">
@@ -59,6 +92,7 @@
         <li>컴퓨터활용능력 2급</li>
         <li>전산회계 2급</li>
         <li>워드프로세서 1급</li>
+        <li>TOEIC SPEAKING IM3</li>
       </ul>
     </section>
 
@@ -66,36 +100,53 @@
       <h3 class="section-title"><span class="bar"></span>활동 및 수상</h3>
       <ul class="activity-list">
         <li>
+          <span class="activity-title">Global Pioneer Program (GPP)</span>
+          <span class="activity-desc">국제통상·스마트유통물류·전자공학 4인 융합 팀 프로젝트 (교내 해외 탐방)</span>
+        </li>
+        <li>
           <span class="activity-title">2026 경상남도 빅데이터 분석 공모전</span>
-          <span class="activity-desc">참가</span>
+          <span class="activity-desc">공공 데이터 가공, 통계 분석 및 정책 아키텍처 수립 참여</span>
         </li>
         <li>
           <span class="activity-title">창업동아리 '나는야 국방맨' 활동 중</span>
-          <span class="activity-desc">국방 규격 PDF 등 정보를 받아 LLM 챗봇 개발</span>
+          <span class="activity-desc">국방 규격 문서 기반 LLM 챗봇 빌드 및 개발 프로세스 주도</span>
         </li>
       </ul>
     </section>
 
   </div>
 
-  <!-- 스킬 & 연락처 -->
   <div class="two-col">
 
     <section class="section">
-      <h3 class="section-title"><span class="bar"></span>SKILLS</h3>
+      <h3 class="section-title"><span class="bar"></span>SKILLS & VALUES</h3>
       <div class="skills">
         <span class="skill-pill">Python</span>
-        <span class="skill-pill">데이터 분석</span>
-        <span class="skill-pill">LLM</span>
+        <span class="skill-pill">Anaconda</span>
+        <span class="skill-pill">Excel</span>
+        <span class="skill-pill">Firebase</span>
+        <span class="skill-pill">Putty</span>
+        <span class="skill-pill">StarUML</span>
         <span class="skill-pill">Git</span>
+        <span class="skill-pill">Pycharm</span>
+        <span class="skill-pill">PowerPoint</span>
+        <span class="skill-pill">Viusal Studio Code</span>
       </div>
     </section>
 
     <section class="section">
       <h3 class="section-title"><span class="bar"></span>CONTACT</h3>
       <div class="contact-row">
+        <span class="contact-label">소속 대학</span>
+        <span style="color: #fff;">경상국립대학교</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">학과/학년</span>
+        <span style="color: #fff;">경영정보학과 (MIS) / 4학년</span>
+      </div>
+      <div class="contact-row">
         <span class="contact-label">GitHub</span>
-        <span>github.com/kms-2002</span>
+        <span><a href="https://github.com/kms-2002" target="_blank" style="color: #64ffda; text-decoration: none;">github.com/kms-2002</a></span>
       </div>
       <div class="contact-row">
         <span class="contact-label">Email</span>
@@ -109,7 +160,7 @@
 
   </div>
 
-  <footer>© 2026 김민성 | AI Agent Challenge</footer>
+  <footer>© 2026 김민성 | 경영정보학(MIS) & AI Agent Challenge</footer>
 
 </body>
 </html>
